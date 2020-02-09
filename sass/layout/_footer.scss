@@ -1,0 +1,71 @@
+footer {
+  background-color: #f1f1f1;
+  padding: 3rem 0;
+
+  @include respond(phone) {
+  }
+}
+
+.footer-container {
+  max-width: 130rem;
+  margin: auto;
+  padding: 0 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.social-media {
+  margin: 2rem 0;
+
+  a {
+    color: #001a21;
+    margin-right: 2.5rem;
+    font-size: 2.2rem;
+    text-decoration: none;
+    transition: all 0.25s;
+
+    &:hover {
+      color: #0c5a70;
+    }
+  }
+}
+
+.left-col {
+  margin-left: 20rem;
+
+  @include respond(phone) {
+    margin-left: 0rem;
+  }
+}
+
+.right-col {
+  margin-right: 20rem;
+
+  @include respond(phone) {
+    margin-right: 0rem;
+  }
+}
+
+.right-col h1 {
+  font-size: 3rem;
+}
+
+.border {
+  width: 10rem;
+  height: 4px;
+  background-color: $color-primary;
+  margin-bottom: 1rem;
+}
+
+.border-small {
+  width: 15rem;
+  height: 1px;
+  background-color: $color-black;
+  margin-bottom: 1rem;
+}
+
+.made-by {
+  font-size: 1.6rem;
+}
